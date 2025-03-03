@@ -13,10 +13,10 @@ This project follows a **custom Feature-Sliced Design (FSD)** architecture, ensu
 📦 app/  
  ├── (app)/ # Main application pages  
  ├── (pages)/ # Page-level components  
- ├── _widgets/ # Complex UI elements (combining features/entities)  
- ├── _features/ # Independent features & logic  
- ├── _entities/ # Core business logic and domain models  
- ├── _shared/ # Reusable UI components, utilities, hooks
+ ├── \_widgets/ # Complex UI elements (combining features/entities)  
+ ├── \_features/ # Independent features & logic  
+ ├── \_entities/ # Core business logic and domain models  
+ ├── \_shared/ # Reusable UI components, utilities, hooks
 
 This structure helps **separate concerns** and **improve scalability**, making the app easy to maintain as it grows.
 
@@ -36,12 +36,12 @@ This structure helps **separate concerns** and **improve scalability**, making t
 
 ```json
 "scripts": {
-  "dev": "next dev --turbopack", // Start development server
-  "build": "next build", // Build for production
-  "start": "next start", // Start production server
-  "stylelint": "npx stylelint '**/*.{css,scss}'", // Run Stylelint
-  "stylelint:fix": "npx stylelint '**/*.{css,scss}' --fix", // Auto-fix styles
-  "lint": "pnpm stylelint && next lint", // Run all linters
-  "lint:fix": "pnpm stylelint:fix && next lint --fix" // Fix linting errors
+  "dev": "next dev --turbopack",
+  "build": "next build",
+  "start": "next start",
+  "stylelint": "npx stylelint '**/*.{css,scss}'",
+  "stylelint:fix": "npx stylelint '**/*.{css,scss}' --fix",
+  "lint": "pnpm stylelint && next lint",
+  "lint:fix": "pnpm stylelint:fix && next lint --fix"
 }
 ```

@@ -32,16 +32,30 @@ This structure helps **separate concerns** and **improve scalability**, making t
 
 ---
 
-## 📜 Scripts
+## 📥 Installation & Setup
 
-```json
-"scripts": {
-  "dev": "next dev --turbopack",
-  "build": "next build",
-  "start": "next start",
-  "stylelint": "npx stylelint '**/*.{css,scss}'",
-  "stylelint:fix": "npx stylelint '**/*.{css,scss}' --fix",
-  "lint": "pnpm stylelint && next lint",
-  "lint:fix": "pnpm stylelint:fix && next lint --fix"
-}
+### 1️⃣ Clone the repository without Git history
+
+```sh
+git clone --depth=1 https://github.com/plesh9/next-boilerplate.git my-project && rm -rf my-project/.git
 ```
+
+### 2️⃣ Navigate to the project directory
+
+```sh
+cd my-project
+```
+
+### 3️⃣ Install dependencies
+
+```sh
+pnpm install  # Or use npm install / yarn install
+```
+
+### 4️⃣ Run the development server
+
+```sh
+pnpm dev  # Or use npm run dev / yarn dev
+```
+
+🚀 **The project will be available at `http://localhost:3000`**.
